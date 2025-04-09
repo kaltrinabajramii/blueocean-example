@@ -7,7 +7,7 @@ node {
     stage('Build image') {
         if (env.BRANCH_NAME == 'dev') {
             echo "Building image on 'dev' branch"
-            app = docker.build("kaltrinabajramii/blueocean-example")
+            app = docker.build("kaltrinabajrami/blueocean-example")
         } else {
             echo "Skipping build - Not on 'dev' branch"
         }
